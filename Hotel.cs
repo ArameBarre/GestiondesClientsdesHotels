@@ -8,5 +8,19 @@ namespace GestiondesClientsdansunHotel
 {
     internal class Hotel
     {
+        public ArrayList Client { get; set; }
+
+       
+public Hotel()
+        {
+            Client = new ArrayList();
+        }
+
+        public void AjouterClient(Client client)
+        {
+            Client.Add(client);
+        }
     }
+
+}
 }
